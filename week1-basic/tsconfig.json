@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    // compilerOptions :  ts -> js 로 변환하는 과정 / type검사 등에 대한 설정
+    "target": "esnext", // esnext는 자바스크립트 최신버전을 의미
+    "module": "esnext",
+    "outDir": "dist", // 컴파일 결과 dist폴더영역으로 분리
+    "strict": true, // 추론되지않는 변수의 타입 명시필수
+    "moduleDetection": "force", // 모듈을 전역으로 보지않고, 자동으로 컴파일시 모듈 시스템 사용 코드 (export {};) 를 추가해주면서 개별의 모듈로 취급하도록 한다.
+    "skipLibCheck": true
+  },
+  "skipLibCheck": true,
+  "include": ["src"] // 컴파일 하는 영역
+}
